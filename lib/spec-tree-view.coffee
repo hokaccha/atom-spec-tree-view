@@ -24,6 +24,8 @@ class SpecTreeView extends View
       editor.moveToFirstCharacterOfLine()
 
   handleEditorEvents: (editor) ->
+    return unless editor
+
     @editorHandlers?.dispose()
     @editorHandlers = null
 
@@ -32,6 +34,8 @@ class SpecTreeView extends View
       @editorHandlers.add editor.onDidSave => @setState(editor)
 
   toggle: (editor) ->
+    return unless editor
+
     if @states.has(editor)
       @removeState(editor)
     else
@@ -40,6 +44,8 @@ class SpecTreeView extends View
     @handleEditorEvents(editor)
 
   setState: (editor) ->
+    return unless editor
+
     try
       specTree = parser.parse(editor.getText())
     catch e
@@ -49,10 +55,14 @@ class SpecTreeView extends View
     @render(editor)
 
   removeState: (editor) ->
+    return unless editor
+
     @states.delete(editor)
     @render(editor)
 
   render: (editor) ->
+    return unless editor
+
     tree = @states.get(editor)
 
     if tree
