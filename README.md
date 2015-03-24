@@ -1,6 +1,6 @@
 # spec-tree-view
 
-List and jump to line current spec file.
+List and jump to line in the current spec file.
 
 ![screen cast](https://raw.github.com/hokaccha/atom-spec-tree-view/master/spec-tree-view.gif)
 
