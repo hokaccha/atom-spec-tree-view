@@ -1,7 +1,7 @@
 {
   "name": "spec-tree-view",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "List and jump to line in the current spec file.",
   "repository": "https://github.com/hokaccha/atom-spec-tree-view",
   "license": "MIT",
