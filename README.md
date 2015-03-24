@@ -2,7 +2,7 @@
 
 List and jump to line current spec file.
 
-![screen cast](https://raw.github.com/hokaccha/atom-open-github-from-npm/master/spec-tree-view.gif)
+![screen cast](https://raw.github.com/hokaccha/atom-spec-tree-view/master/spec-tree-view.gif)
 
 ## Commands
 
