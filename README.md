@@ -13,7 +13,7 @@ List and jump to line in the current spec file.
 ## TODO
 
 * Support CoffeeScript
-* Support ES6
+* ~~Support ES6~~
 * Support RSpec
 * Serialize/Deserialize state
 * Add Settings

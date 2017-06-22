@@ -2,9 +2,14 @@ esprima = require 'esprima'
 estraverse = require 'estraverse'
 
 types = ['describe', 'context', 'it']
+parserOptions = {
+  loc: true,
+  sourceType: 'module',
+  tolerant: true
+}
 
 module.exports.parse = (source) ->
-  return traverse(esprima.parse(source, { loc: true }))
+  return traverse(esprima.parse(source, parserOptions))
 
 isTarget = (node) ->
   node.type == 'CallExpression' && types.indexOf(node.callee.name) != -1;
